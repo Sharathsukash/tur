@@ -6,7 +6,7 @@ _CHROMIUM_VERSION=117.0.5850.0
 TERMUX_PKG_VERSION=$_CHROMIUM_VERSION
 TERMUX_PKG_REVISION=1
 TERMUX_PKG_SRCURL=(https://commondatastorage.googleapis.com/chromium-browser-official/chromium-$_CHROMIUM_VERSION.tar.xz)
-(3d415bf01faf348fd8b72ffcdc3780e6f02ce2cd5f96a957493ec17811327d82)
+TERMUX_PKG_SHA256=(3d415bf01faf348fd8b72ffcdc3780e6f02ce2cd5f96a957493ec17811327d82)
 TERMUX_PKG_DEPENDS="atk, cups, dbus, gtk3, krb5, libc++, libxkbcommon, libminizip, libnss, libwayland, libx11, mesa, openssl, pango, pulseaudio, libdrm, libjpeg-turbo, libpng, libwebp, libflac, fontconfig, freetype, zlib, libxml2, libxslt, libopus, libsnappy"
 # TODO: Split chromium-common and chromium-headless
 # TERMUX_PKG_DEPENDS+=", chromium-common"
