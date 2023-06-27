@@ -20,6 +20,7 @@ SYSTEM_LIBRARIES="    libdrm  libjpeg        libpng  libwebp  flac     fontconfi
 # TERMUX_PKG_DEPENDS="libdrm, libjpeg-turbo, libpng, libwebp, libflac, fontconfig, freetype, zlib, libxml2, libxslt, libopus, libsnappy"
 
 termux_step_post_get_source() {
+        sudo apt install rust
 	python $TERMUX_SCRIPTDIR/common-files/apply-chromium-patches.py -v $_CHROMIUM_VERSION
 
 	local _lib
